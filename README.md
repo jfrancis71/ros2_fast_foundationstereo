@@ -17,15 +17,23 @@ Ubuntu 22.04, Docker version 28.2.2, CUDA 12.2
 
 ## Build and Deploy
 
-To build:
+To install:
 ```
 git clone https://github.com/jfrancis71/ros2_fast_foundationstereo.git
 cd ros2_fast_foundationstereo
 ```
 
 In your browser go to: https://github.com/NVlabs/Fast-FoundationStereo
-Locate the "Weights and Trade-off" section and follow instructions to download the checkpoint "20-30-48".
+Locate the "Weights and Trade-off" section and follow instructions to download the checkpoint "20-30-48". You may need to unzip it and copy the weights into ./ros2_fast_foundationstereo/weights
 
+Your folder should contain:
+
+```
+ros2_fast_foundationstereo/weights/20-30-48/cfg.yaml
+ros2_fast_foundationstereo/weights/20-30-48/model_best_bp2_serialize.pth
+```
+
+To build docker image:
 ```
 docker build -t ros2_ffs -f ./docker/Dockerfile ./weights/
 ```

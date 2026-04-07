@@ -27,12 +27,12 @@ In your browser go to: https://github.com/NVlabs/Fast-FoundationStereo
 Locate the "Weights and Trade-off" section and follow instructions to download the checkpoint "20-30-48".
 
 ```
-docker build -t ffs -f ./docker/Dockerfile ./weights/
+docker build -t ros2_ffs -f ./docker/Dockerfile ./weights/
 ```
 
 To run:
 ```
-docker run -it --rm --gpus=all --network=host --ipc=host ffs
+docker run -it --rm --gpus=all --network=host --ipc=host ros2_ffs
 ```
 
 ### Subscribed Topics

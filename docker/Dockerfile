@@ -5,11 +5,7 @@ RUN apt install -y python3-pip
 RUN apt install -y ros-jazzy-cv-bridge
 RUN pip install torch==2.6.0 torchvision==0.21.0 xformers --index-url https://download.pytorch.org/whl/cu124 --break-system-packages
 RUN pip install timm --break-system-packages
-RUN pip install einops --break-system-packages
 RUN pip install omegaconf --break-system-packages
-RUN pip install scipy --break-system-packages
-RUN pip install numpy --break-system-packages
-RUN pip install scikit-image --break-system-packages
 RUN pip install imageio --break-system-packages
 RUN pip install pyyaml --break-system-packages
 RUN pip install open3d --break-system-packages

@@ -2,6 +2,11 @@
 
 ROS2 bridge to integrate a ROS2 stereo camera with NVIDIA Fast-FoundationStereo model
 
+## YouTube Demonstration
+<a href="https://www.youtube.com/watch?v=XDx2K-4hj9U">
+    <img src="https://img.youtube.com/vi/XDx2K-4hj9U/0.jpg" height=320>
+</a>
+
 ## Summary
 
 This docker image performs stereo depth prediction and can compute a disparity map and a point cloud and make this information available to the ROS2 system. It is similar to the stereo-image-proc node in ROS2. However it uses the NVIDIA Fast-FoundationStereo model (a PyTorch neural network) to make better predictions, particularly in low texture regions of the image. This docker image requires an NVIDIA GPU to run.
